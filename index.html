@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mobile Mockup</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <mobile>
+    <div class="mobile-status-bar">
+      <img src="https://i.imgur.com/XSqz2K4.png" alt="">
+    </div>
+    <div class='mobile-container'>
+      <nav class="flex-nav">
+
+        <h2>SMO-ROW</h2>
+        <div class="navbox"><button class="" onclick="mockupClick('page-Borrow','page-home')">หน้าหลัก</button>
+          <button class="" onclick="mockupClick('page-home','page-Borrow')">ยืมของ</button></div>
+
+      </nav>
+
+      <div id="page-home" class="page">
+        <div class="bigbox">
+
+          <div class="box-object">
+            <div class="object">
+              <div>กรรไกร</div>
+              <div>x1</div>
+            </div>
+            <div class="object">
+              <div>ปากกา</div>
+              <div>x1</div>
+            </div>
+          </div>
+
+          <div class="box-colum">
+            <div class="data">
+              <div>ฟิวส์</div>
+              <div>60070114</div>
+
+              <div class="date">
+                <div>วันที่ยืม :</div>
+                <div>27/03/2563</div>
+              </div>
+              <div class="date">
+                <div>วันที่คืน :</div>
+                <div>05/04/2563</div>
+              </div>
+
+              <div class="date">
+                <div>รับของโดย :</div>
+                <div>พี่แพตตี้</div>
+              </div>
+              <div class="date">
+                <div>ค่าปรับ :</div>
+                <div>0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="page-Borrow" class="page">
+        <h2>วันนี้จะยืมอะไรดี ?</h2>
+        <label for="name">ชื่อ</label>
+        <input type="text">
+        <div class="boxbrrow">
+          <div><label for="generation">รุ่น</label>
+            <input type="text"></div>
+          <div><label for="id">รหัส</label>
+            <input type="text"></div>
+        </div>
+        <label for="tel">เบอร์โทร</label>
+        <input type="text">
+        <label for="branch">สาขา</label>
+        <select id="branch" name="carlist" form="carform">
+          <option value="IT">สาขาวิชาเทคโนโลยีสารสนเทศ</option>
+          <option value="DSBA">สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ</option>
+          <option value="BIT">สาขาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)</option>
+        </select>
+        <br>
+        <br>
+        <h2>สิ่งของที่จะยืม</h3>
+
+          <div class="borrowobj">
+            <label for="object">สิ่งของ</label>
+            <input type="text"><br>
+            <label for="object">จำนวน</label><br>
+            <div class="boxcount">
+              <button class='addselector reduce'>-</button>
+              <input type='number' class='add' placeholder='จำนวนที่จะยืม'>
+              <button class='addselector add'>+</button></div>
+
+            <br>
+            <button>เลือก</button>
+          </div>
+          <br>
+          <br>
+          <div class="boxobj">
+            <div><input type="text"><button class='delete'>ลบ</button></div>
+            
+            <div> <input type="text"><button class='delete'>ลบ</button></div>
+              <div> <input type="text"><button class='delete'>ลบ</button></div>
+          
+          </div>
+          <br>
+          <br>
+          <div class="boxbrrow">
+            <form action="/action_page.php">
+              <label for="borrow">วันที่ยืม</label>
+              <input type="date" id="borrow" name="borrow">
+            </form>
+
+            <form action="/action_page.php">
+              <label for="disgorge">วันที่คืน</label>
+              <input type="date" id="disgorge" name="disgorge">
+            </form>
+          </div>
+
+          <label for="id">ผู้ให้ยืม</label>
+          <input type="text">
+          <br>
+          <label for="id">เหตุผลการยืม</label>
+          <input type="text">
+          <br>
+          <button>ยืนยันการยืม</button>
+      </div>
+  </mobile>
+  <!-- partial -->
+  <script src='https://kit.fontawesome.com/72c1ba4fd7.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

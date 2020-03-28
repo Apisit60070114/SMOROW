@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+body{
+  padding:1em;
+  background:#666;
+ font-family: 'Kanit', sans-serif;
+ font-size: 0.7em;
+}
+mobile{
+  display:flex;
+  flex-flow:column nowrap;
+  background:#BBDFE5;
+  margin:auto;
+  width:414px;
+  height:736px;
+  box-shadow:0px 12px 24px #0004;
+}
+.mobile-status-bar img{
+  width:100%;
+}
+.mobile-container{
+  height:100%;
+  overflow:auto;
+}
+.page{
+  padding:1em;
+}
+nav{
+  background:#0067A5;
+  color:white;
+  text-align:center;
+  padding:.1em;
+
+}
+.navbox{
+  display: flex;
+}
+
+button:hover{
+  opacity: 0.6;
+}
+
+.bigbox{
+  background :#70C4DE;
+  border-radius:.3em;
+  width:100%;
+  text-align:center;
+  padding:1em;
+  box-sizing:border-box;
+  border:none;
+  display: flex;
+}
+
+/*  */
+.box-object{
+  background: white;
+  border-radius:.3em;
+  width:100%;
+  box-sizing:border-box;
+}
+
+
+.object{
+  display: flex;
+  padding: 0.3em;
+}
+.object div{
+  flex: 1 1 50%;
+}
+
+/*  */
+.page-Brorow{
+  display: flex;
+}
+.box-colum{
+  flex: 3 1 100%;
+  text-align: start;
+  padding-left: 1em;
+}
+
+.date{
+  display: flex;
+}
+.date p{
+  flex: 1 1 50%;
+}
+
+#page-Borrow
+{
+  display:none;
+}
+.boxbrrow{
+  display: flex;
+}
+.boxbrrow div{
+  flex: 1 1 80%;
+}
+.boxcount{
+  display: flex;
+}
+
+.boxcount button{
+  width: 15%;
+  height: 15%;
+}
+
+.boxobj button{
+  width: 20%;
+}
+.boxobj div{
+  display: flex;
+}
+/*  */
+
+button{
+  background:rgb(7, 134, 212);
+  border-radius:.3em;
+  font-size:1rem;
+  color:white;
+  width:100%;
+  padding:1em;
+  box-sizing:border-box;
+  border:none;
+}
+input, select {
+  width:100%;
+  border-radius:.3em;
+  font-size:1rem;
+  padding:.5em .5em;
+  box-sizing:border-box;
+  border:1px solid #ccc;
+  margin-bottom:1em;
+}
+
